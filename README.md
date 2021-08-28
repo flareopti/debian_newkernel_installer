@@ -11,7 +11,7 @@ Just put consequentially commands below into your terminal
 4. [write your password]
 5. chmod +x new_kernel.sh
 6. ./new_kernel.sh
-7. reboot
+7. reboot  
 After you did reboot and get into grub menu, select something called "Advanced options for Debian Gnu/Linux" and select new kernel version  
 That's it!  
 # Для русских додиков
