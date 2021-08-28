@@ -1,4 +1,6 @@
 # debian_newkernel_installer
+
+# English description
 Hello, this script automatically installs new kernel version debian.  
 If you want to use it, run it from debian 11 bullseye(tested, works).  
 Working on 10(buster) version of debian is not guaranteed(but if it works, pls create pull request and delete this line)  
