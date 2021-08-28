@@ -10,3 +10,16 @@ Working on 10(buster) version of debian is not guaranteed(but if it works, pls c
 4. [write your password]
 5. chmod +x new_kernel.sh
 6. ./new_kernel.sh
+
+
+# Для русских додиков
+Этот скрипт автоматически устанавливает новую версию ядра на ваш дебиан.  
+Если вы действительно захотели его использовать, то запускайте его на 11 версии дебиана(bullseye).
+Не гарантирую что эта поебень заработает на 10 версии..
+## Как использовать
+1. git clone https://github.com/FlareXF/debian_newkernel_installer
+2. cd debian_newkernel_installer
+3. su
+4. [write your password]
+5. chmod +x new_kernel.sh
+6. ./new_kernel.sh
