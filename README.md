@@ -27,6 +27,7 @@ That's it!
 4. [пиши пароль от рута]
 5. chmod +x new_kernel.sh
 6. ./new_kernel.sh
-7. reboot
+7. reboot  
+
 После перезагрузки и захода в граб, выберите "Advanced options for Debian Gnu/Linux", в этой менюшке выбираете новую версию линукс ведра.  
 Все!  
