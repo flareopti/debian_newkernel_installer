@@ -11,8 +11,9 @@ Just put consequentially commands below into your terminal
 4. [write your password]
 5. chmod +x new_kernel.sh
 6. ./new_kernel.sh
-
-
+7. reboot
+After you did reboot and get into grub menu, select something called "Advanced options for Debian Gnu/Linux" and select new kernel version  
+That's it!  
 # Для русских додиков
 Этот скрипт автоматически устанавливает новую версию ядра на ваш дебиан.  
 Если вы действительно захотели его использовать, то запускайте его на 11 версии дебиана(bullseye).  
@@ -25,3 +26,6 @@ Just put consequentially commands below into your terminal
 4. [пиши пароль от рута]
 5. chmod +x new_kernel.sh
 6. ./new_kernel.sh
+7. reboot
+После перезагрузки и захода в граб, выберите "Advanced options for Debian Gnu/Linux", в этой менюшке выбираете новую версию линукс ведра.  
+Все!  
