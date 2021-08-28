@@ -13,7 +13,7 @@ Just put consequentially commands below into your terminal
 6. ./new_kernel.sh
 7. reboot 
   
-After you did reboot and get into grub menu, select something called "Advanced options for Debian Gnu/Linux" and select new kernel version  
+After you did reboot and get into grub menu, select something called "Advanced options for Debian Gnu/Linux" and select new kernel version.  
 That's it!  
 # Для русских додиков
 Этот скрипт автоматически устанавливает новую версию ядра на ваш дебиан.  
