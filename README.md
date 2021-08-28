@@ -4,6 +4,7 @@ If you want to use it, run it from debian 11 bullseye(tested, works).
 Working on 10(buster) version of debian is not guaranteed(but if it works, pls create pull request and delete this line)  
 
 ## How to use
+Just put consequentially commands below into your terminal 
 1. git clone https://github.com/FlareXF/debian_newkernel_installer
 2. cd debian_newkernel_installer
 3. su
@@ -17,6 +18,7 @@ Working on 10(buster) version of debian is not guaranteed(but if it works, pls c
 Если вы действительно захотели его использовать, то запускайте его на 11 версии дебиана(bullseye).  
 Не гарантирую что эта поебень заработает на 10 версии.
 ## Как использовать
+Просто вводите ту хероту снизу в консоль
 1. git clone https://github.com/FlareXF/debian_newkernel_installer
 2. cd debian_newkernel_installer
 3. su
