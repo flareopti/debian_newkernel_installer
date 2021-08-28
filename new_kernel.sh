@@ -2,7 +2,7 @@
 
 apt-get install build-essential linux-source bc kmod cpio flex libncurses5-dev libelf-dev libssl-dev rsync wget curl dwarves bison git
 cd /usr/src && wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.13.13.tar.xz
-tar xavf /usr/src/linux-5.13.13.tar.xz
+tar -xavf /usr/src/linux-5.13.13.tar.xz -C /usr/src/linux-5.13.13
 cp /boot/config-* /usr/src/linux-5.13.13/
 mv /usr/src/linux-5.13.13 /usr/src/.config
 
