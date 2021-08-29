@@ -5,6 +5,7 @@ cd /usr/src && wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.13.13.t
 tar -xvf /usr/src/linux-5.13.13.tar.xz -C /usr/src/ &&
 cp /boot/config-* /usr/src/linux-5.13.13/ &&
 mv /usr/src/linux-5.13.13/config-* /usr/src/.config &&
+export PATH="/usr/bin:/usr/sbin:$PATH"
 
 install_ker () {
 	yes "" | make oldconfig &&
