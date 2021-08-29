@@ -12,12 +12,17 @@ install_ker () {
 	sed -i "s/CONFIG_SYSTEM_TRUSTED_KEYS.*$/CONFIG_SYSTEM_TRUSTED_KEYS=\"\"/g; s/^.*CONFIG_MT7921E.*$/CONFIG_MT7921E=m/g" .config &&
 	make clean && nice make -j`nproc` bindeb-pkg && cd ..
 	[ -e linux-image-5.13.13_5.13.13-1_amd64.deb ] && dpkg -i linux-image-5.13.13_5.13.13-1_amd64.deb && update-grub &&
-	rm -rf /usr/src/linux-5.13.13/
+	rm -rf /usr/src/linux-5.13.13/ &&
 	#rm linux-image-*-dbg*
+	return 0
+	
+cert_create() {
+	
 }
 
 if [ `pwd` = "/usr/src/linux-5.13.13" ]; then
-	install_ker
+	install_ker &&
+	[ -e /usr/bin/mokutil ] && [ `mokutil` != "EFI variables are not supported on this system" ] && cert_create
 else
 	cd /usr/src/linux-5.13.13 && install_ker
 fi
