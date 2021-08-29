@@ -7,8 +7,8 @@ cp /boot/config-* /usr/src/linux-5.13.13/ &&
 mv /usr/src/linux-5.13.13/config-* /usr/src/.config &&
 
 install_ker () {
-	sed -i "s/CONFIG_SYSTEM_TRUSTED_KEYS.*$/CONFIG_SYSTEM_TRUSTED_KEYS=\"\"/g" .config
 	yes "" | make oldconfig
+	sed -i "s/CONFIG_SYSTEM_TRUSTED_KEYS.*$/CONFIG_SYSTEM_TRUSTED_KEYS=\"\"/g" .config
 	make clean && nice make -j`nproc` bindeb-pkg && cd ..
 	[ -e linux-image-5.13.13_5.13.13-1_amd64.deb ] && dpkg -i linux-image-5.13.13_5.13.13-1_amd64.deb && update-grub
 }
