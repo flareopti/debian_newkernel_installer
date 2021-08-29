@@ -13,6 +13,7 @@ install_ker () {
 	make clean && nice make -j`nproc` bindeb-pkg && cd ..
 	[ -e linux-image-5.13.13_5.13.13-1_amd64.deb ] && dpkg -i linux-image-5.13.13_5.13.13-1_amd64.deb && update-grub &&
 	rm -rf /usr/src/linux-5.13.13/
+	rm linux-image-*-dbg*
 }
 
 if [ `pwd` = "/usr/src/linux-5.13.13" ]; then
