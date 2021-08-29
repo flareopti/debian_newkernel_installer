@@ -9,7 +9,7 @@ export PATH="/usr/bin:/usr/sbin:$PATH"
 
 install_ker () {
 	yes "" | make oldconfig &&
-	sed -i "s/CONFIG_SYSTEM_TRUSTED_KEYS.*$/CONFIG_SYSTEM_TRUSTED_KEYS=\"\"/g; s/^.*CONFIG_MT7921E.*$/CONFIG_MT7921E=y/g" .config &&
+	sed -i "s/CONFIG_SYSTEM_TRUSTED_KEYS.*$/CONFIG_SYSTEM_TRUSTED_KEYS=\"\"/g; s/^.*CONFIG_MT7921E.*$/CONFIG_MT7921E=m/g" .config &&
 	make clean && nice make -j`nproc` bindeb-pkg && cd ..
 	[ -e linux-image-5.13.13_5.13.13-1_amd64.deb ] && dpkg -i linux-image-5.13.13_5.13.13-1_amd64.deb && update-grub &&
 	rm -rf /usr/src/linux-5.13.13/
