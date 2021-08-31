@@ -12,7 +12,7 @@ key_path="`sed "/CONFIG_SYSTEM_TRUSTED_KEYS.*/"\!"d" /boot/config-5.10* | awk -F
 
 apt-get -y install build-essential linux-source bc kmod cpio flex libncurses5-dev libelf-dev libssl-dev rsync wget curl dwarves bison git &&
 cd /usr/src && wget $link_ker &&
-tar -xvf /usr/src/$name_ver* -C /usr/src/ &&
+tar -xvf /usr/src/$name_ver_ext* -C /usr/src/ &&
 ###############################select_menu###############################
 cnt=0
 cfg_list="`echo "$(ls /boot/)" | sed "/config.*/"\!"d" `"
